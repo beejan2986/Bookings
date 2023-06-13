@@ -1,0 +1,40 @@
+
+go mod init
+go get github.com/joho/godotenv
+go install github.com/cosmtrek/air@latest
+
+add .gitignore
+# If you prefer the allow list template instead of the deny list, see community template:
+# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
+#
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.env
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+git remote add origin ...
+git branch -M main
+git push -u origin main
+
+go get -u github.com/go-chi/chi/ router
+go get github.com/justinas/nosurf csrf
+go get github.com/alexedwards/scs/v2 session
+
+git init
+git add .
+git commit -m "init"
